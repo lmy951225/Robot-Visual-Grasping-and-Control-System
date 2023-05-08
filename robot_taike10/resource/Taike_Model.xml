@@ -1,0 +1,97 @@
+    <Model name="Taike" time="0">
+        <Environment name="environment" gravity="{0,0,-9.8,0,0,0}"/>
+        <VariablePoolElement name="variable_pool"/>
+        <PartPoolElement name="part_pool">
+            <Part name="ground" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{1,0,0,0,1,1,1,0,0,0}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_0_j" active="true" pe="{0.148,0,0,0.785398163397448,0,0.785398163397448}"/>
+                    <Marker name="general_motion_0_j" active="true" pe="{0,0,0,-0,0,-0}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/ground.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L1" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{8.8414,0.06020197674,0.00231114196,1.09995592158,0.16736536348768,0.16858815308768,0.027688942,-2.84143e-05,-0.00900424125752,-0.00045847011008}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_0_i" active="true" pe="{0.148,0,0,0.785398163397448,0,0.785398163397448}"/>
+                    <Marker name="joint_1_j" active="true" pe="{0.148,0.182,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint1.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L2" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{17.3086,10.09923750574,3.15013750624,2.25868056442,0.92132807023968,7.64778236352394,7.91881650322698,-1.83805043886324,-1.45302431475475,-0.41107604104796}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_1_i" active="true" pe="{0.148,0.182,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                    <Marker name="joint_2_j" active="true" pe="{0.811,0.0475,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint2.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L3" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{5.1536,6.75347121536,0.2449609152,-0.6507734168,0.103184448444,9.16601200877696,9.09350957522096,-0.3208513389432,0.3680680173874,0.030887550798}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_2_i" active="true" pe="{0.811,0.0475,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                    <Marker name="joint_3_j" active="true" pe="{1.3585,0.0475,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint3.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L4" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{2.6282,3.60259884232,0.12467418622,0.3133537155,0.0460519449409,4.98030025883344,4.94870337887434,-0.17089693644007,-0.42178196070675,-0.01490684078625}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_3_i" active="true" pe="{1.3585,0.0475,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                    <Marker name="joint_4_j" active="true" pe="{1.3585,0.17,0,0.785398163397448,0,0.785398163397448}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint4.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L5" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{2.6282,3.53822055768,0.44695931378,0.3133537155,0.1161489600852,4.80538445946656,4.84388459475176,-0.60172014387573,-0.42960008420675,-0.053247591135}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_4_i" active="true" pe="{1.3585,0.17,0,0.785398163397448,0,0.785398163397448}"/>
+                    <Marker name="joint_5_j" active="true" pe="{1.481,0.17,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint5.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+            <Part name="L6" active="true" pe="{0,0,0,-0,0,-0}" vel="{0,0,0,0,0,0}" acc="{0,0,0,0,0,0}" inertia="{0.3379,0.50042954040682,0.05744526393,0.02919918923,0.0125655667362,0.743945511985001,0.751352538121201,-0.0850764268494894,-0.04327936184963,-0.0049636726691}">
+                <MarkerPoolElement name="marker_pool">
+                    <Marker name="joint_5_i" active="true" pe="{1.481,0.17,0,3.14159265358979,1.5707963267949,4.71238898038469}"/>
+                    <Marker name="general_motion_0_i" active="true" pe="{1.481,0.2765,0,4.71238898038469,1.5707963267949,4.71238898038469}"/>
+                </MarkerPoolElement>
+                <GeometryPoolElement name="geometry_pool">
+                    <ParasolidGeometry name="parasolid_geometry" pe="{0,0,0,-0,0,-0}" graphic_file_path="/home/kk/amc-1.5_taike/resource/joint6.xmt_txt"/>
+                </GeometryPoolElement>
+            </Part>
+        </PartPoolElement>
+        <JointPoolElement name="joint_pool">
+            <RevoluteJoint name="joint_0" active="true" prt_m="L1" prt_n="ground" mak_i="joint_0_i" mak_j="joint_0_j" cf="{0,0,0,0,0}"/>
+            <RevoluteJoint name="joint_1" active="true" prt_m="L2" prt_n="L1" mak_i="joint_1_i" mak_j="joint_1_j" cf="{0,0,0,0,0}"/>
+            <RevoluteJoint name="joint_2" active="true" prt_m="L3" prt_n="L2" mak_i="joint_2_i" mak_j="joint_2_j" cf="{0,0,0,0,0}"/>
+            <RevoluteJoint name="joint_3" active="true" prt_m="L4" prt_n="L3" mak_i="joint_3_i" mak_j="joint_3_j" cf="{0,0,0,0,0}"/>
+            <RevoluteJoint name="joint_4" active="true" prt_m="L5" prt_n="L4" mak_i="joint_4_i" mak_j="joint_4_j" cf="{0,0,0,0,0}"/>
+            <RevoluteJoint name="joint_5" active="true" prt_m="L6" prt_n="L5" mak_i="joint_5_i" mak_j="joint_5_j" cf="{0,0,0,0,0}"/>
+        </JointPoolElement>
+        <MotionPoolElement name="motion_pool">
+            <Motion name="motion_0" active="true" prt_m="L1" prt_n="ground" mak_i="joint_0_i" mak_j="joint_0_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+            <Motion name="motion_1" active="true" prt_m="L2" prt_n="L1" mak_i="joint_1_i" mak_j="joint_1_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+            <Motion name="motion_2" active="true" prt_m="L3" prt_n="L2" mak_i="joint_2_i" mak_j="joint_2_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+            <Motion name="motion_3" active="true" prt_m="L4" prt_n="L3" mak_i="joint_3_i" mak_j="joint_3_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+            <Motion name="motion_4" active="true" prt_m="L5" prt_n="L4" mak_i="joint_4_i" mak_j="joint_4_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+            <Motion name="motion_5" active="true" prt_m="L6" prt_n="L5" mak_i="joint_5_i" mak_j="joint_5_j" cf="{0}" frc_coe="{0,0,0}" component="5" mp="0" mv="0" ma="0"/>
+        </MotionPoolElement>
+        <GeneralMotionPoolElement name="general_motion_pool">
+            <GeneralMotion name="general_motion_0" active="true" prt_m="L6" prt_n="ground" mak_i="general_motion_0_i" mak_j="general_motion_0_j" cf="{0,0,0,0,0,0}"/>
+        </GeneralMotionPoolElement>
+        <ForcePoolElement name="force_pool"/>
+        <SolverPoolElement name="solver_pool">
+            <ForwardKinematicSolver name="forward_kinematic_solver" max_iter_count="100" max_error="1e-10"/>
+            <InverseKinematicSolver name="inverse_kinematic_solver" max_iter_count="100" max_error="1e-10"/>
+            <InverseDynamicSolver name="inverse_dynamic_solver" max_iter_count="100" max_error="1e-10"/>
+        </SolverPoolElement>
+        <SimulatorPoolElement name="simulator_pool"/>
+        <SimResultPoolElement name="sim_result_pool"/>
+        <CalibratorPoolElement name="calibrator_pool"/>
+    </Model>

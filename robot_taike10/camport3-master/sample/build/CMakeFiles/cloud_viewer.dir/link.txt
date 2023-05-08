@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcloud_viewer.a CMakeFiles/cloud_viewer.dir/common/cloud_viewer/cloud_viewer.cpp.o
+/usr/bin/ranlib libcloud_viewer.a

@@ -1,0 +1,31 @@
+<EthercatController name="ethercat_controller">
+        <SlavePoolObject name="slave_pool">
+            <EthercatMotion phy_id="0" vendor_id="0x000000ab" product_code="0x00001030" revision_num="0x00029001" dc_assign_activate="0x00000300" max_pos="2.96706" min_pos="-2.96706" max_vel="5.4105210000000001" min_vel="-5.4105210000000001" max_acc="26.179939000000001" min_acc="-26.179939000000001" max_pos_following_error="0.10000000000000001" max_vel_following_error="0.5" pos_factor="1689721.292776" pos_offset="0" home_pos="0">
+                <SyncManagerPoolObject>
+                    <SyncManager is_tx="false"/>
+                    <SyncManager is_tx="true"/>
+                    <SyncManager is_tx="false">
+                        <Pdo index="0x1600">
+                            <PdoEntry name="control_word" index="0x6040" subindex="0x00" size="16"/>
+                            <PdoEntry name="target_pos" index="0x607A" subindex="0x00" size="32"/>
+                            <PdoEntry name="target_vel" index="0x60FF" subindex="0x00" size="32"/>
+                            <PdoEntry name="offset_vel" index="0x60B1" subindex="0x00" size="32"/>
+                            <PdoEntry name="offset_tor" index="0x60B2" subindex="0x00" size="16"/>
+                            <PdoEntry name="target_tor" index="0x6071" subindex="0x00" size="16"/>
+                            <PdoEntry name="operating_mode" index="0x6060" subindex="0x00" size="8"/>
+                        </Pdo>
+                    </SyncManager>
+                    <SyncManager is_tx="true">
+                        <Pdo index="0x1A00">
+                            <PdoEntry name="status_word" index="0x6041" subindex="0x00" size="16"/>
+                            <PdoEntry name="pos_actual_value" index="0x6064" subindex="0x00" size="32"/>
+                            <PdoEntry name="pos_loop_error" index="0x60F4" subindex="0x00" size="32"/>
+                            <PdoEntry name="vel_actual_value" index="0x606C" subindex="0x00" size="32"/>
+                            <PdoEntry name="tor_actual_value" index="0x6077" subindex="0x00" size="16"/>
+                            <PdoEntry name="display_operation_mode" index="0x6061" subindex="0x00" size="8"/>
+                        </Pdo>
+                    </SyncManager>
+                </SyncManagerPoolObject>
+            </EthercatMotion>
+        </SlavePoolObject>
+</EthercatController>            

@@ -1,0 +1,17 @@
+<CommandParser name="Command_Parser">
+	<CommandPoolObject type="CommandPoolObject" default_child_type="Command">
+		<Command name="enable" default="group">
+			<GroupParam name="group">
+				<UniqueParam name="unique1">
+					<Param name="all" abbreviation="a"/>
+					<Param name="motion" abbreviation="m" default="0"/>
+				</UniqueParam>
+				<UniqueParam name="unique2" default="position">
+					<Param name="position" abbreviation="p"/>
+					<Param name="velocity" abbreviation="v"/>
+					<Param name="current"/>
+				</UniqueParam>
+			</GroupParam>
+		</Command>
+	</CommandPoolObject>
+</CommandParser>

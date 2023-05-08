@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsample_common.a CMakeFiles/sample_common.dir/common/MatViewer.cpp.o CMakeFiles/sample_common.dir/common/TYThread.cpp.o CMakeFiles/sample_common.dir/common/ImageSpeckleFilter.cpp.o CMakeFiles/sample_common.dir/common/DepthInpainter.cpp.o
+/usr/bin/ranlib libsample_common.a

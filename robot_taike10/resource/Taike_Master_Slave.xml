@@ -1,0 +1,16 @@
+<EthercatSlave phy_id="0" product_code="0x00001030" vendor_id="0x000000ab" revision_num="0x03" dc_assign_activate="0x0300">
+	<SyncManagerPoolObject>
+	    <SyncManager  is_tx="false"/>
+		<SyncManager  is_tx="true"/>
+		<SyncManager  is_tx="true">
+			<Pdo index="0x1A00">
+				<PdoEntry name="status_word" index="0x6041" subindex="0x00" size="16"/>
+                <PdoEntry name="pos_actual_value" index="0x6064" subindex="0x00" size="32"/>
+                <PdoEntry name="pos_loop_error" index="0x60F4" subindex="0x00" size="32"/>
+                <PdoEntry name="vel_actual_value" index="0x606C" subindex="0x00" size="32"/>
+                <PdoEntry name="tor_actual_value" index="0x6077" subindex="0x00" size="16"/>
+				<PdoEntry name="display_operation_mode" index="0x6061" subindex="0x00" size="8"/>
+			</Pdo>
+		</SyncManager>
+	</SyncManagerPoolObject>
+</EthercatSlave>
